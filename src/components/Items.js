@@ -2,10 +2,10 @@ import React from 'react';
 
 const Items = (props) => {
     return (
-        <div>
+        <div className="task-lists">
             <ul>
                 { Object.keys(props.notes).map((key)=>(
-                    <li key={key}>{props.notes[key]} <button onClick={() => props.delteItem(key)}>Delete</button></li>
+                    <li key={key}>{props.notes[key]} <button onClick={() => props.delteItem(key)}>X</button></li>
                 )) }
             </ul>
         </div>

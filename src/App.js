@@ -39,12 +39,12 @@ class App extends Component {
   
   render() {
     return (
-      <div>
-        <form action="#" onSubmit={this.handleSubmit}>
-          <input type="text" onChange={this.handleChange} value={this.state.currentData} />
-          <button type="submit">Add</button>
+      <div className="wrapper">
+        <form action="#" className="input-form" onSubmit={this.handleSubmit}>
+          <input type="text" onChange={this.handleChange} value={this.state.currentData}  placeholder="Add a task..."/>
+          <button type="submit">Add Task</button>
         </form>
-        {this.state.notes !== null ? <Items notes={this.state.notes} delteItem={this.handleDelete}/> : <p>There is no item here</p>}
+        {this.state.notes !== null ? <Items notes={this.state.notes} delteItem={this.handleDelete}/> : <p className="items-text">There is no item here</p>}
       </div>
     )
   }

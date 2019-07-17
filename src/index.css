@@ -12,7 +12,99 @@ code {
     monospace;
 }
 
-body{
+body {
   background: #12111f;
   color: #a9a8d8;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.input-form {
+  padding: 30px;
+  display: flex;
+}
+.input-form input {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  font-size: 20px;
+  padding: 0 30px;
+  border: 0;
+  outline: 0;
+  color: #ffffff;
+  background: #2d1268;
+  max-width: 100%;
+  display: block;
+}
+.input-form input::placeholder {
+  color: #9e9e9e;
+}
+.input-form button {
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  padding: 0 30px;
+  border: 0;
+  outline: 0;
+  color: #ffffff;
+  background: #ff5202;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+.task-lists{
+  margin: 30px;
+  border: 1px solid #3f3e4d;
+  padding: 30px;
+}
+.task-lists ul{
+  margin: 0;
+  padding: 0;
+}
+.task-lists li {
+  list-style: none;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  padding: 7px 0;
+  padding-left: 40px;
+  border-bottom: 1px solid #3f3e4d;
+}
+.task-lists li::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.task-lists li button{
+  float: right;
+  font-size: 20px;
+  background: transparent;
+  color: red;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+  line-height: 30px;
+}
+.task-lists li:last-child {
+  border-bottom: 0;
+}
+.task-lists li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  height: 15px;
+  width: 15px;
+  background: #ff5202;
+  border-radius: 100%;
+}
+.items-text{
+  margin: 30px;
+  border: 1px solid #3f3e4d;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 20px;
 }
